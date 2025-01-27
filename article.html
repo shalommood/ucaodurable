@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - UCAO DURABLE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-animate me-2">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="30" font-weight="bold">ODD</text>
+                    </svg>
+                    <span class="ms-2 fw-bold brand-text">UCAO DURABLE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/sante">
+                                <i class="ri-heart-line me-1"></i>Santé
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/societe">
+                                <i class="ri-group-line me-1"></i>Société
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/environnement">
+                                <i class="ri-leaf-line me-1"></i>Environnement
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="editorial-full container my-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="editorial-content" id="article-content">
+                    <!-- Article content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>UCAO DURABLE</h4>
+                    <p>Notre mission : Informer, sensibiliser et inspirer pour un avenir plus durable.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ucao.uat" target="_blank" class="social-icon">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/ucao-uat" target="_blank" class="social-icon">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ucao_uat" target="_blank" class="social-icon">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                    <p class="mt-3">&copy; 2024 UCAO DURABLE. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+        const articleContent = document.getElementById('article-content');
+
+        const articles = {
+            'les-etudiants-developpement-durable': {
+                title: 'Les Étudiants et le Développement Durable : Un Duo Essentiel',
+                author: 'Marie Paule Kodro',
+                date: '27 Janvier 2025',
+                category: 'Société',
+                image: 'https://picsum.photos/seed/conference/1200/600',
+                content: `
+                    <div class="editorial-image-container mb-4">
+                        <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                            <defs>
+                                <linearGradient id="conferenceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#20c997;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#conferenceGradient)"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="50" font-weight="bold">
+                                ODD et Étudiants
+                            </text>
+                        </svg>
+                    </div>
+                    <h1 class="mb-4">Les Étudiants et le Développement Durable : Un Duo Essentiel</h1>
+                    <div class="editorial-meta mb-4">
+                        <span class="badge bg-success me-2">Société</span>
+                        <span>Par Marie Paule Kodro | 27 Janvier 2025</span>
+                    </div>
+                    <div class="editorial-text">
+                        <p>Une conférence sur l'importance du développement durable dans la préservation de l'environnement a été organisée à l'UCAO-UUA sur le thème : « les étudiants et le développement durable : un duo essentiel ».</p>
+                        
+                        <div class="row my-4">
+                            <div class="col-md-6">
+                                <svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#f4f4f4"/>
+                                    <circle cx="50%" cy="50%" r="100" fill="#28a745" opacity="0.2"/>
+                                    <text x="50%" y="50%" text-anchor="middle" font-size="20" fill="#333">
+                                        Conférence ODD
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    « Vous êtes l'avenir de demain ; l'exemple doit venir de vous. Évitez de jeter vos ordures dans les rues, jetez-les dans les poubelles. C'est aussi cela les ODD » - Madame Anicette YEBOUA
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <p>Ce lundi 27 janvier 2025, une conférence sur les Objectifs de Développement Durable (ODD) s'est tenue à l'Université Catholique de l'Afrique de l'Ouest, Unité Universitaire à Abidjan (UCAO-UUA). Organisée par le père directeur de l'ISCOM docteur Benoît KOUASSI en partenariat avec l'ONG Vie Heureuse ; organisation de lutte contre les fléaux sociaux, cet événement avait pour but de sensibiliser les étudiants sur l'importance du développement durable et de promouvoir des pratiques respectueuses de l'environnement.</p>
+
+                        <p>L'auditorium était bondé, rassemblant majoritairement les étudiants, mais aussi des professionnels, le personnel de l'UCAO et des citoyens engagés dans le développement durable ayant eu écho de l'événement. Il a donné l'opportunité aux participants d'écouter des experts dans le domaine, d'échanger des idées et de partager des initiatives locales qui contribuent à la réalisation des ODD et à la promotion du bien-être environnemental.</p>
+
+                        <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#f4f4f4"/>
+                            <text x="50%" y="50%" text-anchor="middle" font-size="30" fill="#333" opacity="0.7">
+                                Ensemble Pour les ODD
+                            </text>
+                        </svg>
+
+                        <p>L'accent était mis sur la nécessité pour les étudiants de préserver leur cadre de vie sain et de sauvegarder la beauté de l'environnement à travers des gestes simples. Madame Anicette YEBOUA, conférencière et présidente de l'ONG Vie Heureuse, a lancé un cri d'alarme aux jeunes étudiants, les considérant comme les garants de l'avenir et du bien-être de l'environnement.</p>
+
+                        <h3>Un Message Fort</h3>
+                        <blockquote>
+                            "Vous êtes l'avenir de demain ; l'exemple doit venir de vous. Évitez de jeter vos ordures dans les rues, jetez-les dans les poubelles. C'est aussi cela les ODD."
+                        </blockquote>
+
+                        <p>Par ces mots, Madame YEBOUA lançait un cri d'alarme aux jeunes étudiants qu'elle considère comme les garants de l'avenir et du bien-être de l'environnement. Pour elle, même des gestes aussi simples participent à la préservation de l'environnement et à l'atteinte des Objectifs du Développement Durable.</p>
+
+                        <h3>Conclusion</h3>
+                        <p>La conférence s'est terminée par une prière de fin dirigée par le père directeur de l'ISCOM, suivie d'un cocktail convivial, symbolisant l'esprit de communion et d'engagement partagé.</p>
+                    </div>
+                    <div class="editorial-signature mt-4">
+                        <p>Un compte-rendu de Marie Paule Kodro, journaliste engagée</p>
+                    </div>
+                `
+            },
+            'engagement-etat-sante': {
+                title: 'L\'Engagement de l\'État Ivoirien dans la Promotion de la Santé pour Tous',
+                author: 'Sephora Esther',
+                date: '10 Février 2024',
+                category: 'Santé',
+                image: 'https://picsum.photos/seed/health-policy/1200/600',
+                content: `
+                    <div class="editorial-image-container mb-4">
+                        <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                            <defs>
+                                <linearGradient id="healthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#007bff;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#28a745;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#healthGradient)"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="50" font-weight="bold">
+                                Santé pour Tous
+                            </text>
+                        </svg>
+                    </div>
+                    <h1 class="mb-4">L'Engagement de l'État Ivoirien dans la Promotion de la Santé pour Tous</h1>
+                    <div class="editorial-meta mb-4">
+                        <span class="badge bg-primary me-2">Santé</span>
+                        <span>Par Sephora Esther | 10 Février 2024</span>
+                    </div>
+                    <div class="editorial-text">
+                        <p>La santé, pilier des Objectifs de Développement Durable (ODD), est au cœur des priorités de l'État ivoirien. À travers diverses initiatives, le gouvernement œuvre pour garantir un accès équitable aux soins de santé.</p>
+                        
+                        <div class="row my-4">
+                            <div class="col-md-6">
+                                <svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#f4f4f4"/>
+                                    <circle cx="50%" cy="50%" r="100" fill="#007bff" opacity="0.2"/>
+                                    <text x="50%" y="50%" text-anchor="middle" font-size="20" fill="#333">
+                                        Couverture Maladie Universelle
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    "La santé n'est pas un privilège, mais un droit fondamental que nous devons garantir à chaque citoyen."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <h3>Principales Initiatives</h3>
+                        <p>Parmi les actions majeures, on note :</p>
+                        <ul>
+                            <li>Mise en place de la Couverture Maladie Universelle (CMU)</li>
+                            <li>Construction d'infrastructures de santé dans les zones rurales</li>
+                            <li>Lutte contre le paludisme, le VIH/SIDA et autres maladies transmissibles</li>
+                        </ul>
+
+                        <h3>Santé Maternelle et Infantile</h3>
+                        <p>L'État investit également dans la santé maternelle et infantile en :</p>
+                        <ul>
+                            <li>Offrant des soins prénataux gratuits</li>
+                            <li>Soutenant les programmes de vaccination</li>
+                            <li>Protégeant les enfants contre des maladies graves</li>
+                        </ul>
+
+                        <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#f4f4f4"/>
+                            <text x="50%" y="50%" text-anchor="middle" font-size="30" fill="#333" opacity="0.7">
+                                Santé Communautaire
+                            </text>
+                        </svg>
+
+                        <h3>Un Effort Collectif</h3>
+                        <p>Pour garantir une santé pour tous, l'implication de tous est cruciale. Les citoyens, les partenaires privés et les jeunes ont un rôle essentiel à jouer.</p>
+
+                        <blockquote>
+                            "Ensemble, nous pouvons relever les défis et construire une Côte d'Ivoire plus saine et durable."
+                        </blockquote>
+                    </div>
+                    <div class="editorial-signature mt-4">
+                        <p>Un article de Sephora Esther, Etudiante engagée</p>
+                    </div>
+                `
+            },
+            'engagement-pauvrete-mondiale': {
+    title: 'La Pauvreté Mondiale, un Défi Crucial pour le Développement Durable',
+    author: 'Ephrem Ahossivo',
+    date: '27 Janvier 2025',
+    category: 'Développement Durable',
+    image: 'https://picsum.photos/seed/global-poverty/1200/600',
+    content: `
+        <div class="editorial-image-container mb-4">
+            <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                <defs>
+                    <linearGradient id="povertyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0.6" />
+                    </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#povertyGradient)"/>
+                <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="50" font-weight="bold">
+                    Pauvreté Mondiale
+                </text>
+            </svg>
+        </div>
+        <h1 class="mb-4">La Pauvreté Mondiale, un Défi Crucial pour le Développement Durable</h1>
+        <div class="editorial-meta mb-4">
+            <span class="badge bg-warning me-2">Développement Durable</span>
+            <span>Par Ephrem Ahossivo | 27 Janvier 2025</span>
+        </div>
+        <div class="editorial-text">
+            <p>Alors que les Objectifs de Développement Durable (ODD) des Nations Unies visent à éradiquer la pauvreté extrême d’ici 2030, les récents rapports révèlent des obstacles majeurs. Entre crises économiques, pandémie, et changements climatiques, les inégalités se creusent, mettant en péril les avancées obtenues au fil des décennies.</p>
+
+            <p>La pauvreté reste l’un des problèmes les plus pressants à l’échelle mondiale. Selon la Banque mondiale, environ 700 millions de personnes vivent avec moins de 2,15 dollars par jour, et l’objectif d’éliminer l’extrême pauvreté d’ici 2030 semble de plus en plus hors d’atteinte. La pandémie de COVID-19 a aggravé cette situation, inversant des années de progrès.</p>
+
+            <h3>Causes de la Stagnation</h3>
+            <p>Plusieurs facteurs expliquent cette stagnation préoccupante. Les conflits armés, les crises économiques et les impacts croissants des changements climatiques perturbent les efforts de réduction de la pauvreté. Par exemple, en 2020, la pandémie a fait basculer 71 millions de personnes dans l’extrême pauvreté, un record inquiétant.</p>
+
+            <h3>Initiatives pour Relever les Défis</h3>
+            <p>Malgré ces difficultés, des solutions émergent. Audrey Azoulay, directrice générale de l’UNESCO et le président brésilien Lula ont récemment plaidé pour convertir la dette des pays les plus pauvres en investissements dans l’éducation. Selon eux, l’éducation est un levier essentiel pour réduire les inégalités et favoriser un développement durable à long terme.</p>
+
+            <h3>Réductions Inquiétantes de l’Aide au Développement</h3>
+            <p>Cependant, les financements pour soutenir les pays les plus pauvres sont en baisse. Par exemple, plusieurs pays européens ont annoncé des coupes significatives dans leur aide au développement. La France, qui avait une position de leader dans ce domaine, prévoit de réduire son aide de 1,3 milliard d’euros d’ici 2025.</p>
+
+            <p>Ainsi, pour atteindre les ODD, il est crucial de renforcer les partenariats internationaux et de repenser les modèles de financement. Sans une action concertée et des investissements stratégiques, l’objectif d’éradiquer la pauvreté sous toutes ses formes d’ici 2030 restera une ambition inatteignable.</p>
+
+            <h3>Sources Utilisées</h3>
+            <ul>
+                <li>Banque mondiale – Rapport sur la pauvreté</li>
+                <li>Le Monde – Appel d’Audrey Azoulay et Lula</li>
+                <li>Le Monde – Réduction de l’aide au développement</li>
+            </ul>
+        </div>
+        <div class="editorial-signature mt-4">
+            <p>Un article de Ephrem Ahossivo, journaliste spécialisé en développement durable</p>
+        </div>
+    `
+}
+
+        };
+
+        
+        if (slug && articles[slug]) {
+            const article = articles[slug];
+            articleContent.innerHTML = article.content;
+            document.title = `${article.title} - UCAO DURABLE`;
+        } else {
+            // Default to the first article
+            const defaultArticle = articles['les-etudiants-developpement-durable'];
+            articleContent.innerHTML = defaultArticle.content;
+            document.title = `${defaultArticle.title} - UCAO DURABLE`;
+        }
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    });
+    </script>
+</body>
+</html>
