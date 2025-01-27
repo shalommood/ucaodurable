@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - UCAO DURABLE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-animate me-2">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="url(#logoGradient)"/>
+                        <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="30" font-weight="bold">ODD</text>
+                    </svg>
+                    <span class="ms-2 fw-bold brand-text">UCAO DURABLE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/sante">
+                                <i class="ri-heart-line me-1"></i>Santé
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/societe">
+                                <i class="ri-group-line me-1"></i>Société
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ucao-durable.org/environnement">
+                                <i class="ri-leaf-line me-1"></i>Environnement
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="editorial-full container my-5">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="editorial-content" id="article-content">
+                    <!-- Article content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>UCAO DURABLE</h4>
+                    <p>Notre mission : Informer, sensibiliser et inspirer pour un avenir plus durable.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ucao.uat" target="_blank" class="social-icon">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/ucao-uat" target="_blank" class="social-icon">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ucao_uat" target="_blank" class="social-icon">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                    <p class="mt-3">&copy; 2024 UCAO DURABLE. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('slug');
+        const articleContent = document.getElementById('article-content');
+
+        const articles = {
+
+
+            'pauvrete-mondiale': {
+                title: 'La Pauvreté Mondiale : Un Défi Crucial pour le Développement Durable',
+                author: 'Ephrem Ahossivo',
+                date: '10 Mars 2024',
+                category: 'Société',
+                image: 'https://picsum.photos/seed/pauvrete/1200/600',
+                content: `
+                    <div class="editorial-image-container mb-4">
+                        <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+                            <defs>
+                                <linearGradient id="povertyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#007bff;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#28a745;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#povertyGradient)"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="50" font-weight="bold">
+                                Pauvreté Mondiale
+                            </text>
+                        </svg>
+                    </div>
+                    <h1 class="mb-4">La Pauvreté Mondiale : Un Défi Crucial pour le Développement Durable</h1>
+                    <div class="editorial-meta mb-4">
+                        <span class="badge bg-success me-2">Société</span>
+                        <span>Par Ephrem Ahossivo | 10 Mars 2024</span>
+                    </div>
+                    <div class="editorial-text">
+                        <p>Alors que les Objectifs de Développement Durable (ODD) des Nations Unies visent à éradiquer la pauvreté extrême d'ici 2030, les récents rapports révèlent des obstacles majeurs. Entre crises économiques, pandémie, et changements climatiques, les inégalités se creusent, mettant en péril les avancées obtenues au fil des décennies.</p>
+                        
+                        <div class="row my-4">
+                            <div class="col-md-6">
+                                <svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#f4f4f4"/>
+                                    <circle cx="50%" cy="50%" r="100" fill="#007bff" opacity="0.2"/>
+                                    <text x="50%" y="50%" text-anchor="middle" font-size="20" fill="#333">
+                                        Défis Mondiaux
+                                    </text>
+                                </svg>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote>
+                                    "La pauvreté reste l'un des problèmes les plus pressants à l'échelle mondiale."
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <h3>Le Contexte Global</h3>
+                        <p>Selon la Banque mondiale, environ 700 millions de personnes vivent avec moins de 2,15 dollars par jour, et l'objectif d'éliminer l'extrême pauvreté d'ici 2030 semble de plus en plus hors d'atteinte. La pandémie de COVID-19 a aggravé cette situation, inversant des années de progrès.</p>
+
+                        <h3>Les Causes de la Stagnation</h3>
+                        <ul>
+                            <li>Conflits armés</li>
+                            <li>Crises économiques</li>
+                            <li>Impacts des changements climatiques</li>
+                            <li>Pandémie de COVID-19</li>
+                        </ul>
+
+                        <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="#f4f4f4"/>
+                            <text x="50%" y="50%" text-anchor="middle" font-size="30" fill="#333" opacity="0.7">
+                                Objectifs de Développement Durable
+                            </text>
+                        </svg>
+
+                        <h3>Initiatives et Espoirs</h3>
+                        <p>Malgré ces difficultés, des solutions émergent. Audrey Azoulay, directrice générale de l'UNESCO, et le président brésilien Lula ont récemment plaidé pour convertir la dette des pays les plus pauvres en investissements dans l'éducation.</p>
+
+                        <blockquote>
+                            "L'éducation est un levier essentiel pour réduire les inégalités et favoriser un développement durable à long terme."
+                        </blockquote>
+
+                        <h3>Un Appel à l'Action</h3>
+                        <p>Pour atteindre les ODD, il est crucial de renforcer les partenariats internationaux et de repenser les modèles de financement. Sans une action concertée et des investissements stratégiques, l'objectif d'éradiquer la pauvreté sous toutes ses formes d'ici 2030 restera une ambition inatteignable.</p>
+                    </div>
+                    <div class="editorial-signature mt-4">
+                        <h4>Sources utilisées</h4>
+                        <ul>
+                            <li>Banque mondiale – Rapport sur la pauvreté</li>
+                            <li>Le Monde – Appel d'Audrey Azoulay et Lula</li>
+                            <li>Le Monde – Réduction de l'aide au développement</li>
+                        </ul>
+                        <p>Un article d'Ephrem Ahossivo, analyste en développement international</p>
+                    </div>
+                `
+            }
+
+
+        };
+
+if (slug && articles[slug]) {
+    const article = articles[slug];
+    articleContent.innerHTML = article.content;
+    document.title = `${article.title} - UCAO DURABLE`;
+} else {
+    // Default to the 'engagement-etat-sante' article
+    const defaultArticle = articles['pauvrete-mondiale'];
+    articleContent.innerHTML = defaultArticle.content;
+    document.title = `${defaultArticle.title} - UCAO DURABLE`;
+}
+
+// Initialize AOS
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+});
+});
+</script>
+</body>
+</html>
